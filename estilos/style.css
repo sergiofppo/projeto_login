@@ -127,7 +127,7 @@ form > input[type=submit]:hover {
     height: 100%;
     border: 0px;
     border-radius: 0px 8px 8px 0px;
-    width: calc(100% - 44px);
+    width: calc(100% - 45px);
     font-size: 1em;
     padding: 5px;
     transform: translateY(-10px);
