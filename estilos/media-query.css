@@ -1,62 +1,93 @@
 @charset "UTF-8";
 
-/* typical device break points
-Pequenas Telas: ate 600px
-celular: - 600-768
-tablet: - 769-992
-desktop: - 993-1200
-Grandes Telas: acima de 1200
+/*
+ Typical Device Breakpoints
+ ---------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to bottom, #5BA6A6, #F8C76D, #8F745B);
     }
-    #login {
+
+    section#login {
         width: 80vw;
-        height: 320px;
+        height: 310px;
     }
-    #login > div#imagem {
-        width: 35%;
-        height: 100%;
+
+    #imagem {
         float: left;
+        width: 30%;
+        height: 100%;
     }
-    #login > div#formulario {
+
+    #form {
         float: right;
-        width: 65%;
+        width: 70%;
     }
-        #formulario > p {
-    font-size: 1em;
-    margin: 10px 0px;
-}
-    #formulario > h1 {
-        font-size: 1.2em;
-}
-    
+
+    p {
+        font-size: 1em;
+        margin-bottom: 14px;
+    }
+
+    form > div.campo {
+        margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+        margin-top: 12px;
+    }
+
+    form > a.botao {
+        margin-top: 10px;
+    }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to bottom, #5BA6A6, #F8C76D, #8F745B);
     }
-    #login {
+
+    section#login {
         width: 950px;
-        height: 440px;
+        height: 340px;
     }
-    #login > div#imagem {
-        float: left;
-        width: 45%;
+
+    #imagem {
+        float: right;
+        width: 50%;
         height: 100%;
     }
-    #login > div#formulario {
-        float: right;
-        width: 55%;
+
+    #form {
+        float: left;
+        width: 50%;
     }
-    #formulario > p {
-    font-size: 1.0em;
-    margin: 10px 0px;
-}
-    #formulario > h1 {
-        font-size: 1.4;
-}
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+    font-size: 1em;
+    margin-bottom: 14px;
+    }
+
+    form > div.campo {
+        margin-bottom: 10px;
+    }
+
+    input[type=submit] {
+        margin-top: 12px;
+    }
+
+    form > a.botao {
+        margin-top: 10px;
+    }
 }
