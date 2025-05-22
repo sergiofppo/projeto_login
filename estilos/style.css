@@ -59,7 +59,7 @@ section#login {
 #imagem {
     display: block;
     background: #B5A395 url(../imagens/praia.jpg) no-repeat;
-    background-position: left bottom;
+    background-position: left center;
     background-size: cover;
     height: 200px;
 }
